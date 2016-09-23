@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
 <meta charset="utf-8">
 <title>APPLE BERRY</title>
 <meta name="viewport" content="width=device-width">
@@ -243,9 +244,11 @@
                 
                 <div class="side">
                 	<p class="item_search">ITEM SEARCH</p>
-                	<div class="search_input">
-                    	<input type="search" class="side_search" placeholder="search">
-                    </div>
+                	<dl>  
+                    <dd><form name="searchform2" id="searchform2" method="get" action="#">  
+                    <input name="keywords2" id="keywords2" value="" type="text" placeholder="search"  /> 
+                    </form></dd>  
+                    </dl>  
                     
                     <div id="menu">
                     
@@ -359,6 +362,7 @@ $(document).ready(function(){
 
 <script>
 $(document).ready(function(){
+	$(".sp-menu_toggle").show();
   $("#menu p.ca_midashi").click(function(){
     $(".sp-menu_toggle").slideToggle();
   });
