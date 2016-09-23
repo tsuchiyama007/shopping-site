@@ -196,7 +196,7 @@ p.item_search {
 input.side_search {
     margin-left: 20px;
     margin-bottom: 20px;
-    background-color: #CCCCCC;
+    background-color: #e3e3e3;
 	background-image:url("./images/top/search_icon.png");
 	background-repeat:no-repeat;
 	background-position: 110pt;
@@ -223,6 +223,10 @@ input.side_search {
     left: 0;
     margin-top: -4px;
     margin-left: 180px;
+}
+
+.arrow a {
+    color: #000;
 }
 
 .owl-carousel .owl-stage-outer {
@@ -278,7 +282,8 @@ input.side_search {
 }
 
 #menu p.ca_midashi {
-  cursor: pointer;
+  	cursor: pointer;
+  	margin-top: 10px;
 }
 .sp-menu_toggle {
   display: none;
@@ -331,9 +336,7 @@ padding:9px 7px;
 }
 
 
-li.normal a:visited, li.last a:visited {
-    color: #887f69;
-}
+
 
 
 .side_button {
@@ -715,8 +718,8 @@ p.product_name{
     width: 660px;
     margin-left: 20px;
 	margin-bottom: 20px;
-	margin-top: 20px;
 	float:left;
+    margin-top: 20px;
 }
 
 
