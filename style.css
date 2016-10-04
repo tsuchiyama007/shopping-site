@@ -1389,7 +1389,8 @@ li.bg5,li.bg6{
     	display: inline;
 	}
 	ul#list_img li img {
-    	width: 18%;
+    	width: 15%;
+	    margin: 10px 0 0 0;
 	}
 	
 	ul.table_cell {
@@ -1587,7 +1588,9 @@ li.bg5,li.bg6{
     	margin-left: 285px;
 	}
 	
-
+	ul#list_img li img {
+    	width: 18%;
+	}
 	
 
 	
