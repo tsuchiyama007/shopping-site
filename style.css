@@ -3,7 +3,7 @@
 body {
 	text-align: center;
 	background-color:#f9f8f6;
-	font-family: Osaka,Verdana,Arial,Helvetica,sans-serif;
+	font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
 	font-size:12px;
 	line-height:170%;
 	color:#444444;
@@ -25,7 +25,6 @@ h1,h2,h3 {
 p {
 	margin:0px;
 	padding:0px;
-	font-weight: bold;
 }
 
 
@@ -305,24 +304,24 @@ input.side_search {
 
 .arrow3 {
     position: relative;
-    display: inline-block;
+
     padding-left: 1px;
 }
 .arrow3::before {
     content: '';
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     border: 0px;
-    border-bottom: solid 2px #fff;
-    border-right: solid 2px #fff;
+    border-bottom: solid 1px #fff;
+    border-right: solid 1px #fff;
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 0;
     margin-top: -4px;
-    margin-left: 180px;
+    margin-left: 175px;
 }
 
 .arrow a {
@@ -351,24 +350,23 @@ input.side_search {
 
 .arrow {
     position: relative;
-    display: inline-block;
     padding-left: 1px;
 }
 .arrow::before {
     content: '';
-    width: 6px;
-    height: 6px;
+    width: 10px;
+    height: 10px;
     border: 0px;
-    border-top: solid 2px #887f69;
-    border-right: solid 2px #887f69;
+    border-top: solid 1px #887f69;
+    border-right: solid 1px #887f69;
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 0;
     margin-top: -4px;
-    margin-left: 180px;
+    margin-left: 175px;
 }
 
 
@@ -443,7 +441,7 @@ input.side_search {
     background: #887f69;
     color: #FFF;
     font-size: 13px;
-    padding: 5px 36px;
+    padding: 5px 25px;
     border-radius: 15px;
     text-align: center;
     vertical-align: center;
@@ -519,7 +517,6 @@ input.side_search {
     flex-direction: row;
     background-color: #fff;
     width: 700px;
-    text-align: center;
 }
 
 .main_box{
@@ -532,7 +529,6 @@ input.side_search {
 
 .box{
 	width: 205px;
-    text-align: center;
     margin: 0 auto;
 	padding-bottom: 20px;
 }
@@ -1160,7 +1156,8 @@ li.bg5,li.bg6{
 	.new_items,
 	.ad,
 	#header_link,
-	.list_mainImg{
+	.list_mainImg,
+	p.item_search{
     	display: none;
 	}
 	
@@ -1241,11 +1238,16 @@ li.bg5,li.bg6{
 	}
 	
 	.arrow3::before{
-		margin-top: -7px;
+	    margin-top: 0px;
+    	float: right;
+    	position: static;
 	}
 
 	.arrow::before{
-		margin-left: 160px;
+		float: right;
+		position: static;
+		margin-right: 5px;
+		margin-top: 5px;
 	}
 		
 	.back li.page_top a{
@@ -1522,20 +1524,28 @@ li.bg5,li.bg6{
 	
 	.side li.normal,
 	.side li.last{
-		text-align: center;	
+		text-align: left;	
 	}
 	
 	.ca_midashi, 
 	.midashi_side, 
 	.midashi {
-    	text-align: center;
+    	text-align: left;
 	}
 	
 	
 	p.midashi span.arrow3::before {
 		margin-left: 165px;
 	}
-
+	
+	dl.search1 {
+		width: 80%;
+    	margin-top: 50px;
+	}
+	
+	#menu {
+    	padding-top: 30px;
+	}
 }
 
 
@@ -1579,14 +1589,6 @@ li.bg5,li.bg6{
 	}
 
 
-	.arrow::before {
-		margin-left: 280px;
-	}
-	
-	p.midashi span.arrow3::before,
-	p.ca_midashi span.arrow3::before{
-    	margin-left: 285px;
-	}
 	
 	ul#list_img li img {
     	width: 18%;
